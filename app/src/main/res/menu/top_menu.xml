@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/picture" yourapp:showAsAction="always"
+        android:title="@string/take_picture" android:icon="@drawable/ic_menu_camera" />
+    <item android:id="@+id/disable_alarm" android:title="@string/disable_alarm" />
+    <item android:id="@+id/enable_alarm" android:title="@string/enable_alarm" />
+</menu>

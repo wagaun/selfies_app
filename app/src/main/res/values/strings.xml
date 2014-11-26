@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Daily Selfie Reminder</string>
+    <string name="take_picture">Take Picture</string>
+
+    <string name="disable_alarm">Disable alarm</string>
+    <string name="enable_alarm">Enable alarm</string>
+
+</resources>
