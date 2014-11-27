@@ -6,5 +6,6 @@
 
     <string name="disable_alarm">Disable alarm</string>
     <string name="enable_alarm">Enable alarm</string>
+    <string name="delete_picture">Delete</string>
 
 </resources>

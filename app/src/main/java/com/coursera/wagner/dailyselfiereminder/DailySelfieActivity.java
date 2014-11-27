@@ -85,9 +85,11 @@ public class DailySelfieActivity extends ActionBarActivity {
                 return true;
             case R.id.disable_alarm:
                 mAlarmManager.cancel(mAlarmIntent);
+                Toast.makeText(this, "Alarm Disabled", Toast.LENGTH_LONG).show();
                 return true;
             case R.id.enable_alarm:
                 enableAlarm(mAlarmIntent);
+                Toast.makeText(this, "Alarm Enabled", Toast.LENGTH_LONG).show();
                 return true;
             default:
                 return false;

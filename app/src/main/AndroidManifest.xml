@@ -8,6 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <receiver android:name=".receiver.SelfieNotificationReceiver" android:enabled="true" />
+        <activity android:name=".ImageDetailsActivity" />
         <activity
             android:theme="@style/Theme.AppCompat.Light"
             android:name="com.coursera.wagner.dailyselfiereminder.DailySelfieActivity"

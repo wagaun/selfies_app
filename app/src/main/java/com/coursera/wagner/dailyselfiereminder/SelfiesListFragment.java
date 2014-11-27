@@ -32,17 +32,15 @@ public class SelfiesListFragment extends ListFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setListAdapter(new SelfiesArrayAdapter(getActivity().getBaseContext(),
+                mImageDataManager.getFileList()));
 //        getListView().setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 //            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-//                Toast.makeText(mContext, "Long press listener!", Toast.LENGTH_LONG).show();
+//                Toast.makeText(getActivity(), "Long press listener!", Toast.LENGTH_LONG).show();
 //                // TODO implement context long click logic
 //                return true;
 //            }
 //        });
-
-        setListAdapter(new SelfiesArrayAdapter(getActivity().getBaseContext(),
-                mImageDataManager.getFileList()));
     }
 
     @Override
