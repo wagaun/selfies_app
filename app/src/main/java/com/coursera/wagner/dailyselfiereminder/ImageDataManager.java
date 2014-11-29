@@ -21,10 +21,10 @@ public class ImageDataManager {
 	private final File mDirectory;
 	
 	public ImageDataManager() throws IOException {
-		mDirectory = new File(Environment.getExternalStorageDirectory() + "/Selfies/");
-		if(!mDirectory.exists() && !mDirectory.mkdirs()) {
-			throw new IOException();
-		}
+        mDirectory = new File(Environment.getExternalStorageDirectory() + "/Selfies/");
+        if (!mDirectory.exists() && !mDirectory.mkdirs()) {
+            throw new IOException();
+        }
 	}
 	
 	public File getDirectory() {

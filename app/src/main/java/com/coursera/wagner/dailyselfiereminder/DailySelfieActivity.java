@@ -126,7 +126,7 @@ public class DailySelfieActivity extends ActionBarActivity {
     }
 
     private void enableAlarm(PendingIntent alarmIntent) {
-        mAlarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP,
+        mAlarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
                 Calendar.getInstance().getTimeInMillis() + ALARM_INTERVAL, ALARM_INTERVAL, alarmIntent);
     }
 
